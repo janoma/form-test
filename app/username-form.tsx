@@ -53,9 +53,9 @@ export default function UsernameForm() {
     >
       <h1>Edit your username</h1>
       <p>
-        <code>"homer"</code> fails during <code>onServerValidate</code>,{" "}
-        <code>"bart"</code> fails with some DB error. Other values pass, as long
-        as they satisfy the schema.
+        <code>&quot;homer&quot;</code> fails during{" "}
+        <code>onServerValidate</code>, <code>&quot;bart&quot;</code> fails with
+        some DB error. Other values pass, as long as they satisfy the schema.
       </p>
       <form.Field name="username">
         {(field) => (

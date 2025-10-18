@@ -3,7 +3,6 @@
 import {
   createServerValidate,
   initialFormState,
-  ServerFormState,
   ServerValidateError,
 } from "@tanstack/react-form/nextjs";
 import "server-only";
@@ -29,9 +28,10 @@ export default async function processUsername(
 
     if (username === "bart") {
       return {
+        ...initialFormState,
         errors: ["Unexpected DB error"],
         values: { ...validatedData },
-      }
+      };
     }
 
     // Success
